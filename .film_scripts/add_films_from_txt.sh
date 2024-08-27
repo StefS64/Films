@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# The script adds all movie titles from the .txt file as a seperate files without the extension. 
+# The script adds all movie titles from the .txt file as a seperate files without the extension 
 
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 1 ]; then
@@ -19,11 +19,11 @@ fi
 mkdir -p all_films
 
 # Read each line from the input file
-while IFS= read -r movie_title; do
+while IFS= read -r movie_title || [ -n "$movie_title" ]; do
   # Clean the movie title to be used as a filename (replace spaces with underscores)
   file_name=$(echo "$movie_title" | tr ' ' '_')
 
-  # Create an empty file with the movie title as its name
+  # Create an empty file with the movie title as its name, does NOT destroy links
   touch "all_films/$file_name"
 
   # Set the permissions to 644
