@@ -24,10 +24,10 @@ while IFS= read -r movie_title; do
   file_name=$(echo "$movie_title" | tr ' ' '_')
 
   # Create an empty file with the movie title as its name
-  touch "all_films/$file_name.txt"
+  touch "all_films/$file_name"
 
   # Set the permissions to 644
-  chmod 644 "all_films/$file_name.txt"
+  chmod 644 "all_films/$file_name"
 done < "$input_file"
 
 echo "All movies have been added to the all_films directory."
