@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# The script adds all movie titles from the .txt file and adds it to the all_films directory. 
+# The script adds all movie titles from the .txt file as a seperate files without the extension. 
 
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 1 ]; then
