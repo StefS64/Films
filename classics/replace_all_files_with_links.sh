@@ -34,5 +34,5 @@ for filename in	./*; do
 		rm "$filename"
 	fi	
 
-	ln -s "$filename" "$(basename "$filename")"
+	ln -s "$source_dir/$filename" "$(basename "$filename")"
 done
