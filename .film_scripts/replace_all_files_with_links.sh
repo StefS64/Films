@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This code isn't working it's case sensitive for directory structure
 if [ -z "$1" ]; then
     echo "Usage: $0 /path/to/source_directory"
     exit 1
