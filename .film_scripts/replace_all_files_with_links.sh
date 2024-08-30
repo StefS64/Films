@@ -15,10 +15,11 @@ show_help() {
 	  -v, --version Show version information and exit
 	
 	Description:
-	  This script creates soft links for all files in a link_directory to files in the source_directory
-	  The first argument is the source_directory the second is the link_directory.
-	  If destroys the files in the link_directory and creates a new on in source_dir, if 
-	  such a file already exists it creates a new one. 
+	  	This script creates hard links for all files in a link_directory to files in the source_directory
+	  	The first argument is the source_directory the second is the link_directory.
+		If destroys the files in the link_directory except for hard links.
+		Creates a new on in source_dir, if 
+	  	such a file doesn't exist it creates a new one. 
 	"
 }
 
