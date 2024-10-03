@@ -8,7 +8,7 @@
 
 show_help() {
     echo "
-	Usage: $(basename "$0") [OPTION]
+	Usage: $(basename "$0") [OPTION] [SOURCE_FILE] [DESTINATION_FILE]
 	
 	Options:
 	  -h, --help    Show this help message and exit
